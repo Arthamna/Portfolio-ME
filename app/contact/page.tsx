@@ -7,14 +7,14 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://linkedin.com/in/hartmannkanisius",
+		href: "https://linkedin.com/in/hartmann-kanisius",
 		label: "Linkedin",
 		handle: "Hartmann",
 	},
 	{
 		icon: <Mail size={20} />,
 		href: "mailto:hartmannkanisius@gmail.com",
-		label: "Email",
+		label: "Gmail",
 		handle: "hartmannkanisius@gmail.com",
 	},
 	{
