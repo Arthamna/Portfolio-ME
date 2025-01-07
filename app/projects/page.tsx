@@ -57,7 +57,7 @@ export default async function ProjectsPage() {
             <Link href={featured.externalLink}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
-                  <div className="text-xs text-slate-400 group-hover:text-stone-400">
+                  <div className="text-xs text-stone-500 group-hover:text-zinc-600">
                     {featured.date ? (
                       <time dateTime={new Date(featured.date).toISOString()}>
                         {Intl.DateTimeFormat(undefined, {
@@ -72,11 +72,11 @@ export default async function ProjectsPage() {
 
                 <h2
                   id="featured-post"
-                  className="mt-4 text-3xl font-bold text-slate-600 group-hover:text-stone-400 sm:text-4xl font-display"
+                  className="mt-4 text-3xl font-bold text-slate-600 group-hover:text-white sm:text-4xl font-display"
                 >
                   {featured.title}
                 </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-600">
+                <p className="mt-4 leading-8 duration-150 text-stone-500 group-hover:text-black">
                   {featured.description}
                 </p>
               </article>
@@ -91,7 +91,7 @@ export default async function ProjectsPage() {
                  <Link href={project.externalLink}> 
                     <article className="relative w-full h-full p-4 md:p-8">
                       <div className="flex items-center justify-between gap-2">
-                        <div className="text-xs text-slate-400 group-hover:text-stone-400">
+                        <div className="text-xs text-stone-500 group-hover:text-zinc-600">
                           {project.date ? (
                             <time
                               dateTime={new Date(project.date).toISOString()}
@@ -106,10 +106,10 @@ export default async function ProjectsPage() {
                         </div>
                       </div>
 
-                      <h2 className="mt-4 text-2xl font-bold text-slate-600 group-hover:text-stone-400  sm:text-3xl font-display">
+                      <h2 className="mt-4 text-2xl font-bold text-slate-600 group-hover:text-white  sm:text-3xl font-display">
                         {project.title}
                       </h2>
-                      <p className="mt-4 leading-7 duration-150 text-zinc-400 group-hover:text-zinc-600">
+                      <p className="mt-4 leading-7 duration-150 text-stone-500 group-hover:text-black">
                         {project.description}
                       </p>
                     </article>

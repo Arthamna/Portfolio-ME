@@ -33,7 +33,7 @@ module.exports = {
 				display: ["var(--font-calsans)"],
 			},
 			backgroundImage: {
-				'custom-bg': "url('/bg.png')",
+				'custom-bg': "url('/bg_2.jpg')",
 			},
 			animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",
