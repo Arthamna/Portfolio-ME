@@ -63,7 +63,7 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-custom-bg bg-cover bg-center bg-fixed min-h-screen ${
+        className={`bg-custom-bg bg-cover bg-center md:bg-fixed min-h-screen ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined
         }`}
       >

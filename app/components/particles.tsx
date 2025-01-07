@@ -94,11 +94,14 @@ export default function Particles({
 	};
 
 	const circleParams = (): Circle => {
+		const screenWidth = canvasSize.current.w;
+		const baseSize = screenWidth < 768 ? 1 : 1.75;
+		const variableSize = screenWidth < 768 ? 1 : 2;
 		const x = Math.floor(Math.random() * canvasSize.current.w);
 		const y = Math.floor(Math.random() * canvasSize.current.h);
 		const translateX = 0;
 		const translateY = 0;
-		const size = Math.floor(Math.random() * 2) + 1.75;
+		const size = Math.floor(Math.random()  * variableSize) + baseSize; 
 		const alpha = 0;
 		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
 		const dx = (Math.random() - 0.5) * 0.2;

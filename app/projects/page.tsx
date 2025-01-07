@@ -47,7 +47,7 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-5 text-slate-400">
-            I don't documment all projects (forget where I put them), but here are some of them.
+            Here are some of my projects, personal dan professional.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-400" />
@@ -57,7 +57,7 @@ export default async function ProjectsPage() {
             <Link href={featured.externalLink}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
-                  <div className="text-xs text-zinc-50 group-hover:text-stone-400">
+                  <div className="text-xs text-slate-400 group-hover:text-stone-400">
                     {featured.date ? (
                       <time dateTime={new Date(featured.date).toISOString()}>
                         {Intl.DateTimeFormat(undefined, {
@@ -65,7 +65,7 @@ export default async function ProjectsPage() {
                         }).format(new Date(featured.date))}
                       </time>
                     ) : (
-                      <span>SOON</span>
+                      <span>On Progress</span>
                     )}
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export default async function ProjectsPage() {
                  <Link href={project.externalLink}> 
                     <article className="relative w-full h-full p-4 md:p-8">
                       <div className="flex items-center justify-between gap-2">
-                        <div className="text-xs text-zinc-50 group-hover:text-stone-400">
+                        <div className="text-xs text-slate-400 group-hover:text-stone-400">
                           {project.date ? (
                             <time
                               dateTime={new Date(project.date).toISOString()}
@@ -101,7 +101,7 @@ export default async function ProjectsPage() {
                               }).format(new Date(project.date))}
                             </time>
                           ) : (
-                            <span>SOON</span>
+                            <span>On Progress</span>
                           )}
                         </div>
                       </div>

@@ -21,7 +21,7 @@ const socials = [
 		icon: <Github size={20} />,
 		href: "https://github.com/Arthamna",
 		label: "Github",
-		handle: "@Arthamna",
+		handle: "Arthamna",
 	},
 ];
 
