@@ -46,10 +46,10 @@ export default function Example() {
 									{s.icon}
 								</span>{" "}
 								<div className="z-10 flex flex-col items-center">
-									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-400 group-hover:text-black font-display">
+									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-slate-600 group-hover:text-black font-display">
 										{s.handle}
 									</span>
-									<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-black">
+									<span className="mt-4 text-sm text-center duration-1000 text-zinc-600 group-hover:text-black">
 										{s.label}
 									</span>
 								</div>
